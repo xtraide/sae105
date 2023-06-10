@@ -1,0 +1,168 @@
+@import url('https://fonts.googleapis.com/css?family=Titillium+Web:400,600');
+
+body {
+  background: #3E3E3E;
+  padding: 50px 0;
+}
+/* NAV  */ 
+.nav {
+  font-family: 'Titillium Web';
+  text-transform: uppercase;
+  text-align: center;
+  font-weight: 600;
+}
+
+.nav * {
+  box-sizing: border-box;
+  transition: all .35s ease;
+}
+
+.nav li {
+  display: inline-block;
+  list-style: outside none none;
+  margin: .5em 1em;
+  paddin: 0;
+}
+
+.nav a {
+  padding: .5em .8em;
+  color: rgba(255,255,255,.5);
+  position: relative;
+  text-decoration: none;
+  font-size: 20px;
+}
+
+.nav a::before,
+.nav a::after {
+  content: '';
+  height: 14px;
+  width: 14px;
+  position: absolute;
+  transition: all .35s ease;
+  opacity: 0;
+}
+
+.nav a::before {
+  content: '';
+  right: 0;
+  top: 0;
+  border-top: 3px solid #3E8914;
+  border-right: 3px solid #2E640F;
+  transform: translate(-100%, 50%);
+}
+
+.nav a:after {
+  content: '';
+  left: 0;
+  bottom: 0;
+  border-bottom: 3px solid #2E640F;
+  border-left: 3px solid #3E8914;
+  transform: translate(100%, -50%)
+}
+
+.nav a:hover:before,
+.nav a:hover:after{
+  transform: translate(0,0);
+  opacity: 1;
+}
+
+.nav a:hover {
+  color: #3DA35D;
+}
+/* FIN NAV */
+
+
+/* PAGE DISCOGRAPHIE */ 
+
+.DisTr .DisTd{
+  width: auto;
+  height: 100%;
+  padding: 10px;
+  color: #8B8B8B;
+  border-bottom: solid;
+}
+.DisLi{
+  background-color: #282828;
+  margin-left: 3%;
+  color: white;
+  display: flex;
+  justify-content: flex-start;
+  width: auto;
+}
+
+.DisImg{
+  width: 100px;
+  height: auto;
+
+}
+.DisLi:hover{
+  background-color:#585858;
+
+}
+.DisP{
+  margin-left: 1%;
+  margin-top: auto;
+  margin-bottom: auto;
+  float: left;
+}
+#DisAudio{
+  margin-bottom: auto;
+  margin-top: auto;
+  margin-left: 10%;
+  display: flex;
+}
+.gg{
+  display: none;
+}
+/* FIN DISCOGRAPHIE */
+
+
+/* ACCUEIL */
+#AccImg{
+  color: white;
+}
+#AccH1{
+  color: #FFB000;
+  text-align: center;
+  font-size: 50px;
+}
+.AccP{
+  color: white;
+  font-size: 20px;
+}
+.AccAr{
+  margin-left: 1%;
+}
+.AccUl{
+  margin-left: auto;
+  margin-right: auto;
+}
+/* FIN ACCUEIL*/ 
+/*FOOTER*/
+#FooA{ 
+  color: white;
+  text-align: center;
+  
+}
+/* FIN FOOTER*/
+
+/*DEBUT BIOGRAPHIE*/
+#BioAr{
+  margin-left: 5%;
+  margin-right: 5%;
+  margin-left: 5%;
+  margin-top: 5%;
+}
+.BioP{
+  color: white;
+  font-size: 15px;
+}
+
+/*FIN BIOGRAPHIE*/
+
+/*GENERAL*/
+#Sec{
+  margin-left: 10%;
+  margin-right: 10%;
+  background-color: #212121;
+}
